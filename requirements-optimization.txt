@@ -1,0 +1,5 @@
+# Optional development-machine dependency for scripts/quantize_onnx_int8.py.
+# Benchmark the exported model on the target Pi before selecting it in config.
+# The quantizer imports ONNX model types as well as ONNX Runtime.
+onnx>=1.15
+onnxruntime>=1.17
