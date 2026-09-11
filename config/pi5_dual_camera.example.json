@@ -1,0 +1,52 @@
+{
+  "front_camera": {
+    "camera_index": 0,
+    "width_px": 640,
+    "height_px": 480,
+    "fps": 15
+  },
+  "rear_camera": {
+    "enabled": true,
+    "camera_index": 1,
+    "width_px": 640,
+    "height_px": 480,
+    "fps": 10
+  },
+  "front_calibration": {
+    "focal_length_px": 580.0,
+    "principal_point_x_px": 320.0,
+    "pixel_width_sigma_px": 2.0,
+    "lateral_sign": 1.0,
+    "calibrated": false
+  },
+  "rear_calibration": {
+    "focal_length_px": 580.0,
+    "principal_point_x_px": 320.0,
+    "pixel_width_sigma_px": 2.0,
+    "lateral_sign": -1.0,
+    "calibrated": false
+  },
+  "detector": {
+    "model_path": "/opt/helmetai-fcw/models/detector.onnx",
+    "input_size_px": 640,
+    "confidence": 0.45,
+    "cpu_threads": 3
+  },
+  "front_inference_every_n_frames": 1,
+  "rear_capture_every_n_frames": 3,
+  "tracking_max_gap_s": 2.0,
+  "performance_window_frames": 60,
+  "latency_budget_ms": 150.0,
+  "minimum_risk_fps": 5.0,
+  "performance_warmup_frames": 60,
+  "risk_assessment_freshness_s": 0.45,
+  "alert_actuator": {
+    "enabled": false,
+    "gpio_chip": null,
+    "buzzer_bcm_pin": null,
+    "vibration_bcm_pin": null,
+    "led_bcm_pin": null,
+    "active_high": true,
+    "warning_pulse_period_s": 0.5
+  }
+}

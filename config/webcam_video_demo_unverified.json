@@ -1,0 +1,21 @@
+{
+  "demonstration_only": true,
+  "camera_role": "front",
+  "webcam": {
+    "camera_index": 0,
+    "width_px": 1280,
+    "height_px": 720,
+    "fps": 30
+  },
+  "front_calibration": {
+    "focal_length_px": 1160.0,
+    "principal_point_x_px": 640.0,
+    "pixel_width_sigma_px": 2.0,
+    "calibrated": true
+  },
+  "detector": {
+    "model_path": "../models/detector.onnx",
+    "input_size_px": 640,
+    "confidence": 0.45
+  }
+}

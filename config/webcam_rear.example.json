@@ -1,0 +1,20 @@
+{
+  "camera_role": "rear",
+  "webcam": {
+    "camera_index": 0,
+    "width_px": 640,
+    "height_px": 480,
+    "fps": 20
+  },
+  "front_calibration": {
+    "focal_length_px": 580.0,
+    "principal_point_x_px": 320.0,
+    "pixel_width_sigma_px": 2.0,
+    "calibrated": false
+  },
+  "detector": {
+    "model_path": "../models/detector.onnx",
+    "input_size_px": 640,
+    "confidence": 0.45
+  }
+}
