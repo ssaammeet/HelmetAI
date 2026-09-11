@@ -1,0 +1,140 @@
+test_active_low_output_and_missing_devices_are_reported_truthfully (test_alert_actuator.AlertActuatorTests) ... ok
+test_ambiguous_or_missing_auto_detection_fails_closed (test_alert_actuator.AlertActuatorTests) ... ok
+test_auto_detects_the_physical_header_chip_by_label (test_alert_actuator.AlertActuatorTests) ... ok
+test_disabled_config_is_a_no_op_without_gpio_import (test_alert_actuator.AlertActuatorTests) ... ok
+test_enabled_config_requires_unique_safe_pin_mapping (test_alert_actuator.AlertActuatorTests) ... ok
+test_patterns_and_close_drive_outputs_to_safe_off_state (test_alert_actuator.AlertActuatorTests) ... ok
+test_profile_rejects_coercible_but_unsafe_wiring_values (test_alert_actuator.AlertActuatorTests) ... ok
+test_blind_spot_only_activates_for_matching_turn_intent (test_awareness.AwarenessTests) ... ok
+test_blind_spot_rejects_centreline_target (test_awareness.AwarenessTests) ... ok
+test_map_keeps_side_camera_gaps_explicit (test_awareness.AwarenessTests) ... ok
+test_camera_only_flag_disables_outputs_without_changing_saved_config (test_cli_commands.CliCommandTests) ... ok
+test_pi_camera_check_command_is_available (test_cli_commands.CliCommandTests) ... ok
+test_pi_run_accepts_software_blind_spot_turn_intent (test_cli_commands.CliCommandTests) ... ok
+test_real_video_command_accepts_front_or_rear_config (test_cli_commands.CliCommandTests) ... ok
+test_rear_calibration_instruction_names_the_rear_profile_field (test_cli_commands.CliCommandTests) ... ok
+test_visual_dashboard_command_is_available (test_cli_commands.CliCommandTests) ... ok
+test_dashboard_uses_both_real_risk_pipelines (test_demo_dashboard.DemoDashboardTimelineTests) ... ok
+test_all_supported_classes_remain_supported (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_empty_and_too_short_outputs_remain_empty (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_float32_threshold_boundary_matches_python_float_comparison (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_nms_flat_nested_and_column_array_results (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_overlapping_classes_survive_and_same_class_is_suppressed (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_randomized_exact_parity_for_both_supported_output_shapes (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_tied_classes_keep_first_argmax_and_candidate_order (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_unsupported_strongest_class_does_not_promote_car (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_zero_pixel_boxes_are_dropped_and_geometry_is_unchanged (test_detection_postprocess.DetectionPostprocessTests) ... ok
+test_shipped_model_accepts_the_example_profile_input_size (test_detector_model_integration.DetectorModelIntegrationTests) ... ok
+test_cli_will_not_overwrite_report (test_detector_profile.DetectorProfileTests) ... ok
+test_config_model_is_relative_to_config_and_override_is_supported (test_detector_profile.DetectorProfileTests) ... ok
+test_defaults_are_bounded_and_all_pi_thread_counts_are_tried (test_detector_profile.DetectorProfileTests) ... ok
+test_invalid_bounds_and_duplicate_threads_are_rejected (test_detector_profile.DetectorProfileTests) ... ok
+test_module_import_has_no_camera_runtime_or_gpio_dependencies (test_detector_profile.DetectorProfileTests) ... ok
+test_nearest_rank_p95_and_median (test_detector_profile.DetectorProfileTests) ... ok
+test_profile_calls_detector_only_excludes_warmup_and_restores_threads (test_detector_profile.DetectorProfileTests) ... ok
+test_shipped_model_profiles_a_synthetic_jpeg_without_claiming_pi_performance (test_detector_profile.DetectorProfileTests) ... ok
+test_smaller_input_and_nonfinite_threshold_are_rejected (test_detector_profile.DetectorProfileTests) ... ok
+test_fresh_rear_warning_bridges_a_scheduled_capture_gap (test_directional_alert_gate.DirectionalAssessmentCacheTests) ... ok
+test_measured_direction_rate_overrides_optimistic_scheduled_rate (test_directional_alert_gate.DirectionalAssessmentCacheTests) ... ok
+test_missing_and_nonfinite_measured_rate_fail_closed (test_directional_alert_gate.DirectionalAssessmentCacheTests) ... ok
+test_newer_lower_assessment_replaces_a_cached_high_warning (test_directional_alert_gate.DirectionalAssessmentCacheTests) ... ok
+test_non_ready_assessment_never_reaches_the_gpio_selector (test_directional_alert_gate.DirectionalAssessmentCacheTests) ... ok
+test_rear_warning_is_blocked_when_global_fps_cannot_support_its_cadence (test_directional_alert_gate.DirectionalAssessmentCacheTests) ... ok
+test_stale_rear_warning_is_removed_and_cannot_reappear (test_directional_alert_gate.DirectionalAssessmentCacheTests) ... ok
+test_car_range_comes_from_known_width (test_monocular.MonocularRangeTests) ... ok
+test_lateral_sign_maps_a_rear_camera_image_to_rider_coordinates (test_monocular.MonocularRangeTests) ... ok
+test_person_range_is_supported_with_conservative_uncertainty (test_monocular.MonocularRangeTests) ... ok
+test_reference_formula (test_monocular.MonocularRangeTests) ... ok
+test_scene_class_without_geometry_model_fails_explicitly (test_monocular.MonocularRangeTests) ... ok
+test_scene_class_without_geometry_model_is_not_metric_capable (test_monocular.MonocularRangeTests) ... ok
+test_zero_width_box_is_not_metric_capable (test_monocular.MonocularRangeTests) ... ok
+test_stationary_far_car_with_box_width_jitter_does_not_alert (test_monocular_noise_regression.MonocularNoiseRegressionTests)
+A periodic +/- 2 px box change at 40 m is not a collision. ... ok
+test_disabled_camera_never_has_processing_success (test_performance.DirectionalPerformanceTests) ... ok
+test_empty_successes_count_but_first_cannot_establish_fps (test_performance.DirectionalPerformanceTests) ... ok
+test_idle_time_decays_directional_fps (test_performance.DirectionalPerformanceTests) ... ok
+test_rolling_window_and_bad_clock (test_performance.DirectionalPerformanceTests) ... ok
+test_blocks_risk_alerts_when_effective_fps_is_too_low (test_performance.EdgePerformanceMonitorTests) ... ok
+test_nonfinite_or_impossible_timing_is_rejected (test_performance.EdgePerformanceMonitorTests) ... ok
+test_permits_risk_alerts_only_after_warmup_and_healthy_performance (test_performance.EdgePerformanceMonitorTests) ... ok
+test_rejects_invalid_health_gate_configuration (test_performance.EdgePerformanceMonitorTests) ... ok
+test_reports_fps_and_budget_status (test_performance.EdgePerformanceMonitorTests) ... ok
+test_reports_when_rolling_latency_exceeds_budget (test_performance.EdgePerformanceMonitorTests) ... ok
+test_wall_intervals_include_output_stalls_without_inflating_work (test_performance.EdgePerformanceMonitorTests) ... ok
+test_benchmark_is_location_independent_and_fails_closed (test_pi_deployment_assets.PiDeploymentAssetTests)
+The installed benchmark cannot depend on the caller's current directory. ... ok
+test_deploy_assets_are_unix_text_files (test_pi_deployment_assets.PiDeploymentAssetTests)
+A CRLF shell script can fail when it is executed directly on Pi OS. ... ok
+test_installer_copies_all_runtime_assets_used_after_install (test_pi_deployment_assets.PiDeploymentAssetTests)
+README commands must still exist after installing into /opt. ... ok
+test_preflight_checks_camera_visibility_and_profile_before_service (test_pi_deployment_assets.PiDeploymentAssetTests) ... ok
+test_service_template_is_rendered_for_the_installing_user (test_pi_deployment_assets.PiDeploymentAssetTests)
+Do not silently assume Raspberry Pi OS has a user called ``pi``. ... ok
+test_assessment_freshness_timeout_must_be_positive (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_calibration_and_rear_enabled_flags_require_json_booleans (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_duplicate_front_and_rear_camera_indexes_are_rejected (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_enabled_alert_actuator_requires_explicit_wiring (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_enabled_rear_camera_requires_a_rear_calibration_profile (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_example_profile_exposes_edge_performance_controls (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_invalid_performance_limits_are_rejected_not_silently_clamped (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_omitted_warmup_uses_a_full_performance_window (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_profile_uses_explicit_rear_lateral_orientation (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_uncalibrated_profile_still_allows_perception_bring_up (test_pi_runtime_config.PiRuntimeConfigTests) ... ok
+test_camera_cleanup_error_still_closes_actuator_and_reports_unknown_state (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_capture_and_inference_errors_never_report_completed_run (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_directional_counts_and_rates_follow_work_actually_processed (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_disabled_rear_camera_has_no_processed_frames (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_empty_scene_emits_a_heartbeat_for_every_completed_loop (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_failed_actuator_apply_does_not_commit_a_completed_performance_cycle (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_final_metrics_exclude_shutdown_and_final_heartbeat_write_delays (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_logging_time_reduces_actual_cadence_but_not_compute_latency (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_missing_rear_frame_is_not_counted_as_successful_processing (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_rear_work_is_not_double_counted_as_postprocessing (test_pi_runtime_timing.PiRuntimeTimingTests) ... ok
+test_malformed_or_ambiguous_json_is_rejected (test_pi_software_update.CameraOnlyUpdateConfigTests) ... ok
+test_missing_or_null_actuator_becomes_explicitly_disabled (test_pi_software_update.CameraOnlyUpdateConfigTests) ... ok
+test_payload_changes_only_gpio_enabled (test_pi_software_update.CameraOnlyUpdateConfigTests) ... ok
+test_prepare_validates_original_relative_model_and_preserves_original (test_pi_software_update.CameraOnlyUpdateConfigTests) ... ok
+test_checks_actual_values_even_when_health_flags_are_true (test_pi_software_update.PiBenchmarkResultTests) ... ok
+test_disabled_rear_is_not_required (test_pi_software_update.PiBenchmarkResultTests) ... ok
+test_each_health_gate_fails_closed (test_pi_software_update.PiBenchmarkResultTests) ... ok
+test_incomplete_failed_or_short_run_fails (test_pi_software_update.PiBenchmarkResultTests) ... ok
+test_missing_final_record_fails (test_pi_software_update.PiBenchmarkResultTests) ... ok
+test_missing_sparse_slow_or_stale_rear_fails (test_pi_software_update.PiBenchmarkResultTests) ... ok
+test_nonfinite_or_nonnumeric_direction_measurements_fail (test_pi_software_update.PiBenchmarkResultTests) ... ok
+test_uses_measured_direction_rates_not_loop_divided_by_cadence (test_pi_software_update.PiBenchmarkResultTests) ... ok
+test_shell_assets_have_lf_and_valid_bash_syntax (test_pi_software_update.PiUpdateShellSyntaxTests) ... ok
+test_closing_demo_escalates_to_critical (test_pipeline.ForwardCollisionPipelineTests) ... ok
+test_filter_learns_a_closing_speed (test_pipeline.ForwardCollisionPipelineTests) ... ok
+test_pipeline_holds_a_higher_alert_briefly (test_pipeline.ForwardCollisionPipelineTests) ... ok
+test_rear_closing_demo_escalates_to_critical (test_rear_pipeline.RearCollisionPipelineTests) ... ok
+test_rear_observations_reduce_distance (test_rear_pipeline.RearCollisionPipelineTests) ... ok
+test_closing_vehicle_behind_warns (test_rear_risk_engine.RearCollisionRiskEngineTests) ... ok
+test_invalid_rear_calibration_degrades_system (test_rear_risk_engine.RearCollisionRiskEngineTests) ... ok
+test_missing_rear_temporal_evidence_fails_closed (test_rear_risk_engine.RearCollisionRiskEngineTests) ... ok
+test_rear_closing_trend_requires_elapsed_time (test_rear_risk_engine.RearCollisionRiskEngineTests) ... ok
+test_static_rear_vehicle_does_not_become_a_threat (test_rear_risk_engine.RearCollisionRiskEngineTests) ... ok
+test_vehicle_outside_rear_corridor_does_not_warn (test_rear_risk_engine.RearCollisionRiskEngineTests) ... ok
+test_closing_trend_requires_elapsed_time_not_only_fast_frames (test_risk_engine.ForwardCollisionRiskEngineTests) ... ok
+test_closing_vehicle_in_path_warns (test_risk_engine.ForwardCollisionRiskEngineTests) ... ok
+test_high_uncertainty_pedestrian_does_not_create_a_false_ttc_alarm (test_risk_engine.ForwardCollisionRiskEngineTests) ... ok
+test_invalid_calibration_degrades_system (test_risk_engine.ForwardCollisionRiskEngineTests) ... ok
+test_missing_temporal_evidence_fails_closed (test_risk_engine.ForwardCollisionRiskEngineTests) ... ok
+test_static_distance_does_not_become_a_threat_from_uncertainty (test_risk_engine.ForwardCollisionRiskEngineTests) ... ok
+test_vehicle_outside_forward_corridor_does_not_warn (test_risk_engine.ForwardCollisionRiskEngineTests) ... ok
+test_very_short_ttc_is_critical (test_risk_engine.ForwardCollisionRiskEngineTests) ... ok
+test_rejects_invalid_camera_parameters_before_hardware_open (test_rpi_camera_config.PiCameraConfigTests) ... ok
+test_depth_from_disparity (test_stereo.StereoCalibrationTests) ... ok
+test_depth_uncertainty_grows_at_long_range (test_stereo.StereoCalibrationTests) ... ok
+test_robust_depth_rejects_invalid_samples (test_stereo.StereoCalibrationTests) ... ok
+test_assigns_distinct_ids (test_tracking.IoUTrackerTests) ... ok
+test_keeps_id_for_same_car_in_next_frame (test_tracking.IoUTrackerTests) ... ok
+test_uses_the_configured_camera_prefix (test_tracking.IoUTrackerTests) ... ok
+test_demo_profile_scales_to_1080p_source (test_video_demo_profile.VideoDemoProfileTests) ... ok
+test_loads_explicit_demo_only_flag (test_webcam_config.WebcamConfigTests) ... ok
+test_loads_relative_model_path (test_webcam_config.WebcamConfigTests) ... ok
+test_rejects_unknown_camera_role (test_webcam_config.WebcamConfigTests) ... ok
+
+----------------------------------------------------------------------
+Ran 130 tests in 12.410s
+
+OK
