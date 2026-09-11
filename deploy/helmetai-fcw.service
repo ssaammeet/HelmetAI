@@ -1,0 +1,18 @@
+[Unit]
+Description=HelmetAI front and rear collision-risk MVP
+After=multi-user.target
+
+[Service]
+Type=simple
+# install_pi.sh replaces this token with the regular user that installed the
+# project.  Do not run camera access as root.
+User=__HELMETAI_USER__
+WorkingDirectory=/opt/helmetai-fcw
+Environment=PYTHONPATH=/opt/helmetai-fcw/src
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 -m helmetai_fcw pi-run --config /etc/helmetai-fcw/pi5_dual_camera.json
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
